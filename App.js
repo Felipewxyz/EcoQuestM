@@ -24,7 +24,7 @@ export default function App() {
   };
 
   const fetchDataPost = async () => {
-    const API_URL = "http://192.168.0.109:3000"; // Corrigido
+    const API_URL = "http://192.168.0.109:3000";
     const ENDPOINT = "/api/user";
     const body = {
       username: "usuario1",
@@ -33,7 +33,7 @@ export default function App() {
     const response = await fetch(API_URL + ENDPOINT, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json' // Corrigido
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify(body)
     });
